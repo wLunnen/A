@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Music Archive</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Music Archive</h1>
+
+		<!-- Upload Section -->
+		<div class="upload-section">
+			<h2>Upload Your Music</h2>
+			<input type="file" id="audio-upload" accept="audio/*">
+			<button onclick="uploadAudio()">Upload</button>
+		</div>
+
+		<!-- Audio Player Section -->
+		<div class="audio-player">
+			<h2>Now Playing:</h2>
+			<audio id="audio-player" controls>
+				<source id="audio-source" src="" type="audio/mp3">
+				Your browser does not support the audio element.
+			</audio>
+		</div>
+
+		<!-- Audio Archive -->
+		<div class="archive">
+			<h2>Audio Archive</h2>
+			<ul id="audio-list">
+				<!-- List of uploaded audios will be displayed here -->
+			</ul>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
