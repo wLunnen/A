@@ -1,54 +1,46 @@
-// Global array to store uploaded audio files
+// Store audio files
 let audioFiles = [];
 
-// Function to handle file upload
 function uploadAudio() {
-	const fileInput = document.getElementById("audio-upload");
-	const file = fileInput.files[0];
+  const fileInput = document.getElementById('audio-file');
+  const file = fileInput.files[0];
 
-	if (!file) {
-		alert("Please select a file first.");
-		return;
-	}
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(event) {
+      const audioData = event.target.result;
+      const audioName = file.name;
 
-	// Check if file is an audio file
-	if (!file.type.startsWith("audio/")) {
-		alert("Please upload an audio file.");
-		return;
-	}
+      // Store audio file data in array
+      audioFiles.push({ name: audioName, data: audioData });
 
-	// Create an object URL for the audio file
-	const audioURL = URL.createObjectURL(file);
+      // Display the uploaded audio in the list
+      displayAudioList();
+    };
+    
+    // Read file as data URL
+    reader.readAsDataURL(file);
+  } else {
+    alert('Please select a file to upload');
+  }
 
-	// Add the audio file to the list of audio files
-	audioFiles.push({ name: file.name, url: audioURL });
-
-	// Update the audio list on the page
-	updateAudioList();
-
-	// Reset the file input
-	fileInput.value = "";
+  // Clear input
+  fileInput.value = '';
 }
 
-// Function to update the audio archive list
-function updateAudioList() {
-	const audioList = document.getElementById("audio-list");
-	audioList.innerHTML = "";
+function displayAudioList() {
+  const audioListElement = document.getElementById('audio-list');
+  audioListElement.innerHTML = '';
 
-	audioFiles.forEach((audio, index) => {
-		const li = document.createElement("li");
-		li.textContent = audio.name;
-		li.onclick = () => playAudio(audio.url);
-
-		audioList.appendChild(li);
-	});
-}
-
-// Function to play selected audio file
-function playAudio(audioURL) {
-	const audioPlayer = document.getElementById("audio-player");
-	const audioSource = document.getElementById("audio-source");
-	audioSource.src = audioURL;
-	audioPlayer.load();
-	audioPlayer.play();
+  audioFiles.forEach((audio, index) => {
+    const li = document.createElement('li');
+    li.innerHTML = `
+      <span>${audio.name}</span>
+      <audio controls>
+        <source src="${audio.data}" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    `;
+    audioListElement.appendChild(li);
+  });
 }
