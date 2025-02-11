@@ -161,3 +161,20 @@ function deleteAudio(fileId) {
     console.log("Error deleting audio file:", deleteRequest.error);
   };
 }
+
+// Delete all audio files
+function deleteAllAudio() {
+  const transaction = db.transaction(["audioFiles"], "readwrite");
+  const store = transaction.objectStore("audioFiles");
+
+  const clearRequest = store.clear(); // This will remove all records from the store
+
+  clearRequest.onsuccess = function () {
+    console.log("All audio files deleted");
+    loadAudioFiles(); // Refresh the list after deletion
+  };
+
+  clearRequest.onerror = function () {
+    console.log("Error deleting all audio files:", clearRequest.error);
+  };
+}
