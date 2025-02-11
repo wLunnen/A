@@ -144,4 +144,20 @@ function loadAudioFiles() {
   };
 }
 
+// Delete an audio file
+function deleteAudio(fileId) {
+  const transaction = db.transaction(["audioFiles"], "readwrite");
+  const store = transaction.objectStore("audioFiles");
 
+  // Delete the file from IndexedDB
+  const deleteRequest = store.delete(fileId);
+
+  deleteRequest.onsuccess = function () {
+    console.log("Audio file deleted");
+    loadAudioFiles(); // Refresh the list after deletion
+  };
+
+  deleteRequest.onerror = function () {
+    console.log("Error deleting audio file:", deleteRequest.error);
+  };
+}
