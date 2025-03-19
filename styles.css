@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
 }
 
 .container {
@@ -10,6 +13,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
+  flex-grow: 1; /* Ensures content takes up available space above footer */
 }
 
 h1 {
@@ -27,14 +31,14 @@ input[type="file"] {
 
 button {
   padding: 10px 20px;
-  background-color: #D73F09;  /* Updated color */
+  background-color: #D73F09; /* Updated color */
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #d03200;  /* Darker shade of the same color */
+  background-color: #d03200; /* Darker shade of the same color */
 }
 
 .audio-list {
@@ -73,6 +77,9 @@ footer {
   padding: 10px 0;
   text-align: center;
   margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Ensures the footer spans the full width of the page */
 }
 
 .master-tracks {
@@ -83,3 +90,4 @@ footer {
   font-size: 1.8rem;
   color: #D73F09;  /* Updated color */
 }
+
