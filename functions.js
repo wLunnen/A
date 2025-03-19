@@ -1,6 +1,13 @@
 // Store audio files
 let audioFiles = [];
 
+// Master tracks placeholder (will be populated from the database)
+let masterTracks = [
+  { name: "Track 1", id: 1 },
+  { name: "Track 2", id: 2 }
+];
+
+// Upload Audio
 function uploadAudio() {
   const fileInput = document.getElementById('audio-file');
   const file = fileInput.files[0];
@@ -28,6 +35,7 @@ function uploadAudio() {
   fileInput.value = '';
 }
 
+// Display audio list (for uploaded files in cache)
 function displayAudioList() {
   const audioListElement = document.getElementById('audio-list');
   audioListElement.innerHTML = '';
@@ -45,14 +53,8 @@ function displayAudioList() {
   });
 }
 
-
-
-
-//DB 
-
-
+// DB Setup
 let db;
-
 const request = indexedDB.open("audioArchive", 1);
 
 // Set up the database structure
@@ -69,10 +71,6 @@ request.onsuccess = function (event) {
   loadAudioFiles(); // Load files if any exist
 };
 
-request.onerror = function (event) {
-  console.log("Database error:", event.target.errorCode);
-};
-
 // Upload Audio File to IndexedDB
 function uploadAudio() {
   const fileInput = document.getElementById('audio-file');
@@ -80,7 +78,6 @@ function uploadAudio() {
 
   if (file) {
     const reader = new FileReader();
-
     reader.onload = function (event) {
       const audioData = event.target.result;
       const audioName = file.name;
@@ -112,7 +109,7 @@ function uploadAudio() {
   fileInput.value = '';
 }
 
-// Load all stored audio files
+// Load all stored audio files from IndexedDB
 function loadAudioFiles() {
   const audioListElement = document.getElementById('audio-list');
   audioListElement.innerHTML = ''; // Clear previous list
@@ -144,12 +141,11 @@ function loadAudioFiles() {
   };
 }
 
-// Delete an audio file
+// Delete an audio file from IndexedDB
 function deleteAudio(fileId) {
   const transaction = db.transaction(["audioFiles"], "readwrite");
   const store = transaction.objectStore("audioFiles");
 
-  // Delete the file from IndexedDB
   const deleteRequest = store.delete(fileId);
 
   deleteRequest.onsuccess = function () {
@@ -162,7 +158,7 @@ function deleteAudio(fileId) {
   };
 }
 
-// Delete all audio files
+// Delete all audio files from IndexedDB
 function deleteAllAudio() {
   const transaction = db.transaction(["audioFiles"], "readwrite");
   const store = transaction.objectStore("audioFiles");
@@ -178,3 +174,18 @@ function deleteAllAudio() {
     console.log("Error deleting all audio files:", clearRequest.error);
   };
 }
+
+// Display master tracks from the database (or placeholder)
+function displayMasterTracks() {
+  const masterTrackListElement = document.getElementById('master-track-list');
+  masterTrackListElement.innerHTML = '';
+
+  masterTracks.forEach(track => {
+    const li = document.createElement('li');
+    li.textContent = track.name;
+    masterTrackListElement.appendChild(li);
+  });
+}
+
+// Call to populate master tracks list
+displayMasterTracks();
