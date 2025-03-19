@@ -17,7 +17,7 @@ h1 {
   margin-bottom: 20px;
 }
 
-.upload-section {
+.upload-section, .master-tracks {
   margin-bottom: 30px;
 }
 
@@ -27,14 +27,14 @@ input[type="file"] {
 
 button {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #D73F09;  /* Updated color */
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #d03200;  /* Darker shade of the same color */
 }
 
 .audio-list {
@@ -58,4 +58,28 @@ li {
 
 audio {
   width: 100%;
+}
+
+header {
+  background-color: #D73F09; /* Updated color */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #D73F09; /* Updated color */
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.master-tracks {
+  margin-bottom: 30px;
+}
+
+.master-tracks h2 {
+  font-size: 1.8rem;
+  color: #D73F09;  /* Updated color */
 }
