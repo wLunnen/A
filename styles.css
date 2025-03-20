@@ -31,14 +31,14 @@ input[type="file"] {
 
 button {
   padding: 10px 20px;
-  background-color: #D73F09; /* Updated color */
+  background-color: #65040e; /* Updated color */
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #d03200; /* Darker shade of the same color */
+  background-color: #5A030C; /* Darker shade of the same color */
 }
 
 .audio-list {
@@ -65,14 +65,14 @@ audio {
 }
 
 header {
-  background-color: #D73F09; /* Updated color */
+  background-color: #65040e; /* Updated color */
   color: white;
   padding: 20px 0;
   text-align: center;
 }
 
 footer {
-  background-color: #D73F09; /* Updated color */
+  background-color: #65040e; /* Updated color */
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -88,6 +88,6 @@ footer {
 
 .master-tracks h2 {
   font-size: 1.8rem;
-  color: #D73F09;  /* Updated color */
+  color: #65040e;  /* Updated color */
 }
 
