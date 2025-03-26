@@ -92,5 +92,6 @@ footer {
 }
 
 #self-destruct {
-   bottom: anchor(bottom);
+  boarder-bottom: black;
+  bottom: anchor(footer);
 }
