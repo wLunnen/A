@@ -91,3 +91,6 @@ footer {
   color: #65040e;  /* Updated color */
 }
 
+#self-destruct {
+   bottom: anchor(bottom);
+}
