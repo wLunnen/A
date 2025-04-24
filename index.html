@@ -30,28 +30,31 @@
   </header>
 
   <div class="container">
-    <!-- EsBoS Section -->
+    
+
+    <!-- Upload Section -->
+    <div class="upload-section">
+      <h2>Upload Audio Files</h2>
+      <input type="file" id="audio-file" accept="audio/*">
+      <button onclick="uploadAudio()">Upload</button>
+    </div>
+
+    <!-- BoS Section -->
+    <div class="audio-list">
+      <h2>Bank of Sound</h2>
+      <ul id="audio-list">
+        <!-- Audio files will be listed here -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- EsBoS Section -->
     <div class="master-tracks">
       <h2>Established Bank Of Sound</h2>
       <ul id="master-track-list">
         <!-- Master tracks will be listed here -->
       </ul>
     </div>
-
-    <!-- BoS Section -->
-    <div class="upload-section">
-      <h2>Bank of Sound</h2>
-      <input type="file" id="audio-file" accept="audio/*">
-      <button onclick="uploadAudio()">Upload</button>
-    </div>
-
-    <div class="audio-list">
-      <h2>Uploaded Audio Files</h2>
-      <ul id="audio-list">
-        <!-- Audio files will be listed here -->
-      </ul>
-    </div>
-  </div>
 
   <!-- delete all
   <button id="self-destruct" onclick="deleteAllAudio()">Delete All Audio Files</button>
