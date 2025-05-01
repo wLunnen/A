@@ -114,5 +114,5 @@ footer {
 
 #self-destruct {
   boarder-bottom: black;
-  bottom: anchor(footer);
+  bottom: anchor(footer-top);
 }
