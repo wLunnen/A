@@ -5,7 +5,7 @@ body {
   background-color: #FAF9F6;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
+  min-height: 100vh;
 }
 
 .container {
@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  flex-grow: 1; /* Ensures content takes up available space above footer */
+  flex-grow: 1; 
 }
 
 h1 {
@@ -31,14 +31,14 @@ input[type="file"] {
 
 button {
   padding: 10px 20px;
-  background-color: #65040e; /* Updated color */
+  background-color: #FFFDD0; 
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #5A030C; /* Darker shade of the same color */
+  background-color: #5A030C;
 }
 
 .audio-list {
@@ -65,7 +65,7 @@ audio {
 }
 
 header {
-  background-color: #65040e; /* Updated color */
+  background-color: #65040e; 
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -93,14 +93,14 @@ header {
 }
 
 footer {
-  background-color: #192130; /* Updated color */
+  background-color: #192130;
   color: white;
   padding: 10px 0;
   text-align: center;
   margin-top: 20px;
   position: absolute;
   bottom: 0;
-  width: 100%; /* Ensures the footer spans the full width of the page */
+  width: 100%; 
 }
 
 .master-tracks {
@@ -109,6 +109,6 @@ footer {
 
 .master-tracks h2 {
   font-size: 1.8rem;
-  color: #65040e;  /* Updated color */
+  color: #000000; 
 }
 
