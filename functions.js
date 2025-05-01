@@ -191,7 +191,7 @@ function displayMasterTracks() {
 displayMasterTracks();
 
 
-
+/*
 //test code for carousel
 const carousel-images = [
   https://i.postimg.cc/MpDsbBtQ/venue1.png" alt="Album Cover" class="round-button-img">
@@ -213,3 +213,4 @@ function showNextImage() {
 }
 
 setInterval(showNextImage, 3000); // Change image every 3 seconds
+*/
