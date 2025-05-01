@@ -101,24 +101,38 @@ header {
   color: #000000; 
 }
 
-/*
-footer {
-  background-color: #192130;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-  margin-top: 20px;
-  position: absolute;
-  bottom: 0;
-  width: 100%; 
+
+
+//carousel 
+.carousel-container {
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid #ccc;
+  position: relative;
 }
 
-.footer img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s ease;
+.carousel img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  left: -220px;
+  animation: slideIn 0.5s forwards;
 }
-*/
+
+@keyframes slideIn {
+  from {
+    left: -220px;
+    opacity: 0;
+  }
+  to {
+    left: 10px;
+    opacity: 1;
+  }
+}
 
 .footer {
   position: fixed;
