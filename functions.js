@@ -189,3 +189,27 @@ function displayMasterTracks() {
 
 // Call to populate master tracks list
 displayMasterTracks();
+
+
+
+//test code for carousel
+const carousel-images = [
+  https://i.postimg.cc/MpDsbBtQ/venue1.png" alt="Album Cover" class="round-button-img">
+      "https://i.postimg.cc/fTYqyp95/venue2.png"
+      "https://i.postimg.cc/MZCrWqvv/venue3.png"
+      "https://i.postimg.cc/MpxPQ50w/venue4.png"
+      "https://i.postimg.cc/G23q5m75/venue5.png"
+];
+
+let currentIndex = 0;
+const newCarouselImage = document.getElementById("carousel-image");
+
+function showNextImage() {
+  currentIndex = (currentIndex + 1) % image.length;
+  newCarouselImage.classList.remove("slide");
+  void newCarouselImage.offsetWidth; // Restart animation
+  newCarouselImage.src = image[currentIndex];
+  newCarouselImage.classList.add("slide");
+}
+
+setInterval(showNextImage, 3000); // Change image every 3 seconds
