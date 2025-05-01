@@ -31,9 +31,9 @@ input[type="file"] {
 
 button {
   padding: 10px 20px;
-  background-color: #FFFDD0; 
-  color: black;
-  border: 1px solid black;
+  background-color: #000000; 
+  color: white;
+  border: none;
   cursor: pointer;
 }
 
