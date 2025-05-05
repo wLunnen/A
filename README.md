@@ -1,5 +1,5 @@
-# Archives 18
-<p> <strong>Archives 18</strong> is an independent music platform built to spotlight under-the-radar artists, unreleased gems, and sounds you won’t find anywhere else. </p> 
+# Archive
+<p> This archive is an independent music platform built to spotlight under-the-radar artists, unreleased gems, and sounds you won’t find anywhere else. </p> 
 <br> 
 <p> Designed for discovery, this is more than just a player—it’s a living archive. From dusty demos and raw cuts to polished releases, we showcase music with depth, soul, and a story. The catalog grows organically through real connections, not algorithms. </p>
 <br> 
