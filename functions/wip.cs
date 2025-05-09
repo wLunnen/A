@@ -1,9 +1,11 @@
 //include C# in this to add diversity to sites
 
-//class structures include 
+/*
+class structures include 
 artists - albums, songs
 albums - songs, covers
 songs - lyrics
+*/
 
 //add request feature for sampling/colab
 
