@@ -65,7 +65,7 @@ audio {
 }
 
 header {
-  background-color: #65040e; 
+  background-color: #000000; 
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -140,7 +140,7 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #192130;
+  background: #000000;
   display: flex;
   justify-content: space-around;
   align-items: center;
