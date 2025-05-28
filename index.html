@@ -18,23 +18,44 @@
 <body>
   <header>
     <!-- Artist Button (left) -->
-    <a href="artist.html" class="header-button">
-      <img src="https://i.postimg.cc/wj2GDP2d/Profile-Wild.png" alt="Artist Portrait" class="round-button-img">
-    </a>
+    <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">
+      &#9776;
+    </button>
   
-    <!-- Title -->
+    <!-- Title (center)
     <div class="header-title">
       <h1>Wild Wes Productions
       </br>
       &copy; 2024-<script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script></h1>
     </div>
+    -->
   
     <!-- Album Button (right) -->
+    <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()">
+      &#9776;
+    </button>
+
+    <!-- Left Sidebar -->
+    <a href="artist.html" class="header-button">
+      <img src="https://i.postimg.cc/wj2GDP2d/Profile-Wild.png" alt="Artist Portrait" class="round-button-img">
+    </a>
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+      <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+
+    <!-- Right Sidebar -->
     <a href="album.html" class="header-button">
       <img src="https://i.postimg.cc/9M68Wjmy/Sample-1313.png" alt="Album Cover" class="round-button-img">
     </a>
-
-
+    <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+      <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
     
     <!-- Venues (????) Carousel 
     <div class="carousel-container">
@@ -47,7 +68,8 @@
           <img id="carousel-image" src="https://i.postimg.cc/MpxPQ50w/venue4.png" alt="Album Cover" class="round-button-img">
           <img id="carousel-image" src="https://i.postimg.cc/G23q5m75/venue5.png" alt="Album Cover" class="round-button-img">
         </a>
--->
+      -->
+    
       </div>
     </div>
     
@@ -100,6 +122,11 @@
       <img src="https://i.postimg.cc/Dy3zvVrB/united-masters.png" alt="United Masters">
     </a>
     -->
+    </br>
+    <a>
+      <h1>Wild Wes Productions
+      &copy; 2024-<script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script></h1>
+    </a>
   </footer>
 
   <script src="functions.js"></script>
