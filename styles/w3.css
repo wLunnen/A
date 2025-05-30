@@ -1,3 +1,4 @@
+/*other
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -249,8 +250,9 @@ img {
 a {
   color: inherit;
 }
+*/
 
-/* Table styles */
+/* Table styles 
 .w3-table,
 .w3-table-all {
   border-collapse: collapse;
@@ -297,8 +299,9 @@ a {
 .w3-table-all td:first-child {
   padding-left: 16px;
 }
+*/
 
-/* Button styles */
+/* Button styles 
 .w3-btn,
 .w3-button {
   border: none;
@@ -313,6 +316,7 @@ a {
   cursor: pointer;
   white-space: nowrap;
 }
+*/
 .w3-btn:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),
               0 6px 20px 0 rgba(0,0,0,0.19);
@@ -341,7 +345,7 @@ a {
   box-shadow: none;
 }
 
-/* Badge and tag styles */
+/* Badge and tag styles 
 .w3-badge,
 .w3-tag {
   background-color: #000;
@@ -354,8 +358,9 @@ a {
 .w3-badge {
   border-radius: 50%;
 }
+*/
 
-/* List styles */
+/* List styles 
 .w3-ul {
   list-style-type: none;
   padding: 0;
@@ -368,8 +373,9 @@ a {
 .w3-ul li:last-child {
   border-bottom: none;
 }
+*/
 
-/* Tooltip and display container */
+/* Tooltip and display container 
 .w3-tooltip,
 .w3-display-container {
   position: relative;
@@ -380,16 +386,18 @@ a {
 .w3-tooltip:hover .w3-text {
   display: inline-block;
 }
+*/
 
-/* Ripple effect */
+/* Ripple effect 
 .w3-ripple:active {
   opacity: 0.5;
 }
 .w3-ripple {
   transition: opacity 0s;
 }
+*/
 
-/* Input and select */
+/* Input and select 
 .w3-input {
   padding: 8px;
   display: block;
@@ -403,8 +411,9 @@ a {
   border: none;
   border-bottom: 1px solid #ccc;
 }
+*/
 
-/* Dropdowns */
+/* Dropdowns 
 .w3-dropdown-click,
 .w3-dropdown-hover {
   position: relative;
@@ -435,8 +444,9 @@ a {
   padding: 0;
   z-index: 1;
 }
+*/
 
-/* Form controls */
+/* Form controls 
 .w3-check,
 .w3-radio {
   width: 24px;
@@ -444,6 +454,7 @@ a {
   position: relative;
   top: 6px;
 }
+*/
 
 /* Sidebar */
 .w3-sidebar {
@@ -455,14 +466,15 @@ a {
   overflow: auto;
 }
 
-/* Border Radius */
+/* Border Radius 
 .w3-round-small { border-radius: 2px; }
 .w3-round, .w3-round-medium { border-radius: 4px; }
 .w3-round-large { border-radius: 8px; }
 .w3-round-xlarge { border-radius: 16px; }
 .w3-round-xxlarge { border-radius: 32px; }
+*/
 
-/* Padding */
+/* Padding 
 .w3-row-padding,
 .w3-row-padding > .w3-half,
 .w3-row-padding > .w3-third,
@@ -482,18 +494,20 @@ a {
     margin-top: 16px;
     margin-bottom: 16px;
 }
+*/
 
-/* Display Types */
+/* Display Types 
 .w3-grid { display: grid; }
 .w3-grid-padding { display: grid; gap: 16px; }
 .w3-flex { display: flex; }
+*/
 
 /* Text Alignment and Style */
 .w3-text-center { text-align: center; }
 .w3-text-bold, .w3-bold { font-weight: bold; }
 .w3-text-italic, .w3-italic { font-style: italic; }
 
-/* Code Styling */
+/* Code Styling 
 .w3-code, .w3-codespan {
     font-family: Consolas, "courier new";
     font-size: 16px;
@@ -514,8 +528,9 @@ a {
     padding-right: 4px;
     font-size: 110%;
 }
+*/
 
-/* Cards */
+/* Cards 
 .w3-card, .w3-card-2 {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
@@ -524,6 +539,7 @@ a {
 .w3-hover-shadow:hover {
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
 }
+*/
 
 /* Animations */
 .w3-spin {
@@ -611,13 +627,14 @@ a {
     width: 100% !important;
 }
 
-/* Opacity */
+/* Opacity 
 .w3-opacity, .w3-hover-opacity:hover { opacity: 0.60; }
 .w3-opacity-off, .w3-hover-opacity-off:hover { opacity: 1; }
 .w3-opacity-max { opacity: 0.25; }
 .w3-opacity-min { opacity: 0.75; }
+*/
 
-/* Filters */
+/* Filters 
 .w3-greyscale, .w3-grayscale { filter: grayscale(75%); }
 .w3-greyscale-min, .w3-grayscale-min { filter: grayscale(50%); }
 .w3-greyscale-max, .w3-grayscale-max,
@@ -628,8 +645,9 @@ a {
 .w3-sepia { filter: sepia(75%); }
 .w3-sepia-min { filter: sepia(50%); }
 .w3-sepia-max, .w3-hover-sepia:hover { filter: sepia(100%); }
+*/
 
-/* Font Sizes */
+/* Font Sizes 
 .w3-tiny { font-size: 10px !important; }
 .w3-small { font-size: 12px !important; }
 .w3-medium { font-size: 15px !important; }
@@ -638,14 +656,16 @@ a {
 .w3-xxlarge { font-size: 36px !important; }
 .w3-xxxlarge { font-size: 48px !important; }
 .w3-jumbo { font-size: 64px !important; }
+*/
 
-/* Text Alignment */
+/* Text Alignment 
 .w3-left-align { text-align: left !important; }
 .w3-right-align { text-align: right !important; }
 .w3-justify { text-align: justify !important; }
 .w3-center { text-align: center !important; }
+*/
 
-/* Borders */
+/* Borders 
 .w3-border-0 { border: 0 !important; }
 .w3-border { border: 1px solid #ccc !important; }
 .w3-border-top { border-top: 1px solid #ccc !important; }
@@ -657,8 +677,9 @@ a {
 .w3-bottombar { border-bottom: 6px solid #ccc !important; }
 .w3-leftbar { border-left: 6px solid #ccc !important; }
 .w3-rightbar { border-right: 6px solid #ccc !important; }
+*/
 
-/* Margins */
+/* Margins 
 .w3-section, .w3-code {
     margin-top: 16px !important;
     margin-bottom: 16px !important;
@@ -669,8 +690,9 @@ a {
 .w3-margin-bottom { margin-bottom: 16px !important; }
 .w3-margin-left { margin-left: 16px !important; }
 .w3-margin-right { margin-right: 16px !important; }
+*/
 
-/* Padding */
+/* Padding 
 .w3-padding-small { padding: 4px 8px !important; }
 .w3-padding { padding: 8px 16px !important; }
 .w3-padding-large { padding: 12px 24px !important; }
@@ -685,18 +707,21 @@ a {
 .w3-padding-top-48 { padding-top: 48px !important; }
 .w3-padding-top-32 { padding-top: 32px !important; }
 .w3-padding-top-24 { padding-top: 24px !important; }
+*/
 
-/* Float */
+/* Float 
 .w3-left { float: left !important; }
 .w3-right { float: right !important; }
+*/
 
-/* Button Hover */
+/* Button Hover 
 .w3-button:hover {
     color: #000 !important;
     background-color: #ccc !important;
 }
+*/
 
-/* Transparent and Hover None */
+/* Transparent and Hover None 
 .w3-transparent, .w3-hover-none:hover {
     background-color: transparent !important;
 }
@@ -704,3 +729,4 @@ a {
 .w3-hover-none:hover {
     box-shadow: none !important;
 }
+*/
