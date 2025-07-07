@@ -113,7 +113,7 @@ header {
 }
 
 .w3-bar-item {
-  color: white; /* Ensures menu items remain visible */
+  color: #000000;
   font-size: 16px;
 }
 
