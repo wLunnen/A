@@ -10,7 +10,7 @@ body {
 
 .container {
   width: 80%;
-  margin: 1rem;
+  margin: 0rem;
   padding: 20px;
   text-align: center;
   flex-grow: 1; 
