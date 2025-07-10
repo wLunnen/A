@@ -64,24 +64,7 @@ audio {
   width: 100%;
 }
 
-header {
-  background-color: #000000; 
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-.header-title {
-  text-align: center;
-  flex-grow: 1;
-}
-
-.header-button {
-  display: inline-block;
-}
 
 .round-button-img {
   margin: auto;
@@ -140,31 +123,3 @@ header {
   box-shadow: none;
 }
 
-.footer {
-  color: white;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #000000;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
-}
-
-.footer img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s ease;
-}
-
-.footer img:hover {
-  transform: scale(1.1);
-}
-
-.footer a {
-  margin: 0 10px;
-}
