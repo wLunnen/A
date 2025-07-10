@@ -117,57 +117,6 @@ header {
   background-color: #333; /* Subtle hover effect */
 }
 
-/*
-//carousel 
-.carousel-container {
-  width: 220px;
-  height: 220px;
-  overflow: hidden;
-  border-radius: 50%;
-  border: 4px solid #ccc;
-  position: relative;
-}
-
-.carousel img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  position: absolute;
-  left: -220px;
-  animation: slideIn 0.5s forwards;
-}
-
-@keyframes slideIn {
-  from {
-    left: -220px;
-    opacity: 0;
-  }
-  to {
-    left: 10px;
-    opacity: 1;
-  }
-}
-
-@keyframes fading {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
-}
-
-.w3-animate-fading {
-  animation: fading 10s infinite;
-}
-
-@keyframes animatezoom {
-  from { transform: scale(0); }
-  to { transform: scale(1); }
-}
-
-.w3-animate-zoom {
-  animation: animatezoom 0.6s;
-}
-*/
 
 .w3-btn, .w3-button {
   user-select: none; /* Prevents text selection */
