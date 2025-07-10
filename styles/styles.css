@@ -10,7 +10,7 @@ body {
 
 .container {
   width: 80%;
-  margin: 0rem;
+  margin: 0;
   padding: 20px;
   text-align: center;
   flex-grow: 1; 
@@ -219,5 +219,3 @@ header {
 .footer a {
   margin: 0 10px;
 }
-
-/*fuck you*/
