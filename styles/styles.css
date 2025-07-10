@@ -8,6 +8,10 @@ body {
   min-height: 100vh;
 }
 
+main {
+  flex: 1;
+}
+
 .container {
   width: 80%;
   margin: 0;
