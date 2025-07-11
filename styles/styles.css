@@ -8,21 +8,9 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-  flex-grow: 1; 
-}
-
 h1 {
   font-size: 1rem;
   margin: auto;
-}
-
-.upload-section, .master-tracks {
-  margin-bottom: 30px;
 }
 
 input[type="file"] {
@@ -39,10 +27,6 @@ button {
 
 button:hover {
   background-color: #5A030C;
-}
-
-.audio-list {
-  margin-top: 20px;
 }
 
 ul {
@@ -64,7 +48,22 @@ audio {
   width: 100%;
 }
 
+.master-tracks h2 {
+  font-size: 1.8rem;
+  color: #000000; 
+}
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1; 
+}
+
+.audio-list {
+  margin-top: 20px;
+}
 
 .round-button-img {
   margin: auto;
@@ -75,51 +74,6 @@ audio {
   border: 2px solid #333;
 }
 
-.master-tracks h2 {
-  font-size: 1.8rem;
-  color: #000000; 
+.upload-section, .master-tracks {
+  margin-bottom: 30px;
 }
-
-.w3-sidebar {
-  height: 100%;
-  width: 200px;
-  background-color: #222;
-  color: white;
-  padding: 15px;
-  position: fixed !important;
-  z-index: 9999;
-  overflow: auto;
-}
-
-.w3-bar-item {
-  color: #000000;
-  font-size: 16px;
-}
-
-.w3-bar-item:hover {
-  background-color: #333; /* Subtle hover effect */
-}
-
-
-.w3-btn, .w3-button {
-  user-select: none; /* Prevents text selection */
-}
-.w3-btn:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),
-              0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.w3-disabled,
-.w3-btn:disabled,
-.w3-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.3;
-}
-.w3-disabled *,
-:disabled * {
-  pointer-events: none;
-}
-.w3-btn.w3-disabled:hover,
-.w3-btn:disabled:hover {
-  box-shadow: none;
-}
-
