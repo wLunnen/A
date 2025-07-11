@@ -13,22 +13,6 @@ h1 {
   margin: auto;
 }
 
-input[type="file"] {
-  margin-right: 10px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #000000; 
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #5A030C;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -46,6 +30,22 @@ li {
 
 audio {
   width: 100%;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #000000; 
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5A030C;
+}
+
+input[type="file"] {
+  margin-right: 10px;
 }
 
 .master-tracks h2 {
