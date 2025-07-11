@@ -1,9 +1,52 @@
-/* Text Alignment and Style */
+/* for use on index and other w3 specific elements */
+
+.w3-sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  position: fixed !important;
+  z-index: 9999;
+  overflow: auto;
+}
+
+.w3-bar-item {
+  color: #000000;
+  font-size: 16px;
+}
+
+.w3-bar-item:hover {
+  background-color: #333;
+}
+
+
+.w3-btn, .w3-button {
+  user-select: none;
+}
+.w3-btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),
+              0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.w3-disabled,
+.w3-btn:disabled,
+.w3-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+.w3-disabled *,
+:disabled * {
+  pointer-events: none;
+}
+.w3-btn.w3-disabled:hover,
+.w3-btn:disabled:hover {
+  box-shadow: none;
+}
+
 .w3-text-center { text-align: center; }
 .w3-text-bold, .w3-bold { font-weight: bold; }
 .w3-text-italic, .w3-italic { font-style: italic; }
 
-/* Animations */
 .w3-spin {
     animation: w3-spin 2s infinite linear;
 }
